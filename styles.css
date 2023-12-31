@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    transition: background-image 0.5s ease; 
+}
+
+header{
+    background-color: rgba(255, 252, 252, 0.176);
+    padding: 20px;
+    color: white;
+    box-shadow: 100px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+.logo img {
+    width: 120px;
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+    .logo {
+        text-align: center; /* Center-align the text within the container */
+    }
+
+    .logo img {
+        width: 120px;
+        margin: 0 auto; /* Center the image horizontally using margin */
+    }
+}
+
+nav {
+    text-align: right; /* Mengatur tata letak teks ke kanan */
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+nav li {
+  display: inline-block; /* Mengatur elemen list agar sejajar */
+  margin-left: 15px; /* Mengatur jarak antara link */
+}
+
+nav a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+    nav {
+        text-align: center; /* Center-align the text */
+        margin: 20px auto; /* Center the entire navigation vertically and horizontally */
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+    }
+
+    nav li {
+        display: inline-block; /* Mengatur elemen list agar sejajar */
+        margin-left: 15px; /* Mengatur jarak antara link */
+      }
+
+    nav a {
+        font-family: sans-serif;
+        text-decoration: none;
+        color:black;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+.title {
+    /* text-align: center; */
+    margin-top: 270px;
+    color: white;
+}
+
+.main-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sub-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+
+
+/* For mobile screens */
+@media (max-width: 768px) {
+    .tittle{
+        font-family:'Poppins', sans-serif;
+        display: block;
+        margin-top: 300px;
+        color: white;
+    }
+}
+
+/* Default button styles */
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/* Button style on hover */
+.btn:hover {
+    background-color: #17a2b8;
+    color: white;
+    border-color: #17a2b8;
+}
+
+/* Button style when active (clicked) */
+.btn:active {
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+/* Footer */
+footer {
+	background: rgb(23, 66, 72);
+	background: linear-gradient(
+		90deg,
+		rgba(23, 66, 72, 1) 0%,
+		rgba(33, 113, 122, 1) 52%,
+		rgba(23, 66, 72, 1) 100%
+	);
+	color: white;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .footer-section {
+    flex: 1;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .footer-section {
+      flex-basis: 100%;
+      margin-right: 0;
+    }
+  }
